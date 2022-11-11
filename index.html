@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Summer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="img/ropa.png">
+</head>
+<body>
+    <!--header- menu-->
+    <header class="main-header">
+        <div class="container  container__flex">
+            <div class="main-header__container">
+                <h1 class="main-header__title">SUMMER</h1>
+                <span class="icon-menu " id="btn-menu"><i class="fa-solid fa-bars"></i></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#main-nav" class="menu__link">INICIO</a></li>
+                        <li class="menu__item"><a href="#section-products" class="menu__link">TIENDA</a></li>
+                        <li class="menu__item"><a href="#caracteristicas" class="menu__link">CARACTERISTICAS</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-header__container">
+                <span class="main-header__text">¿Necesitas ayuda?</span>
+                <p class="main-header__text"><i class="fa-solid fa-phone"></i>Llamar al 1845127863</p>
+            </div>
+            <div class="main-header__container">
+                <input type="search" class="main-header__input"><i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#" id="btnCompra"  class="main-header__btn" >Mi compra <i class="fa-solid fa-cart-shopping" ></i></a>
+                <div class="carrito" id="miCompra">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                </div>     
+            </div>
+        </div>
+         <!--slider-->
+    </header>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="img/banner.jpg" alt="modelo en traje de bikini negro" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Tendencia del Verano 2022-2023</h2>
+                    <p class="slider__txt">Descuento Verano 30%</p>
+                    <a href="#compra-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img/banner01.jpg" alt="modelo en traje musculosa floreada" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Todos los talles disponibles</h2>
+                    <p class="slider__txt">Descuento Verano 30%</p>
+                    <a href="#compra-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img/banner02.jpg" alt="modelo en maya enteriza oscura" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Remeras Estampadas</h2>
+                    <p class="slider__txt">Descuento Verano 30%</p>
+                    <a href="#compra-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="img/banner03.jpg" alt="modelo bikini floreada" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Super oferta </h2>
+                    <p class="slider__txt">Descuento Verano 30%</p>
+                    <a href="#comprar-ahora" class="slider__link">COMPRAR AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn-right" id="btn-right">&#62</div>
+        <div class="slider__btn slider__btn-left" id="btn-left">&#60</div>
+    </div>
+    <!--Shop-Products-->
+    <main class="main" id="compra-ahora">
+        <div class="container" id="lista-compras">
+            <h2 class="main-title">Lo último en tendencia para ti</h2>
+            <section class="container-products" id="section-products">
+                <div class="product">
+                    <img class="product__img" src="img/imagen01.jpg" alt="remera algodon blanca estampa perro">
+                    <div class="product__description">
+                        <h3 class="product__title">Remera The dog</h3>
+                        <span class="product__price">$1200</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus agregar-carrito" data-id="1"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen02.jpg" alt="remara blanca auto">
+                    <div class="product__description">
+                        <h3 class="product__title">Auto Hippie</h3>
+                        <span class="product__price">$1000</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="2"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen03.jpg" alt="remera blanca superheroes">
+                    <div class="product__description">
+                        <h3 class="product__title">Superheroes</h3>
+                        <span class="product__price">$1500</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="3"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen04.jpg" alt="Remera hombre navada">
+                    <div class="product__description">
+                        <h3 class="product__title">Remera nevada</h3>
+                        <span class="product__price">$1500</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="4"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen05.jpg" alt="Remera blaca Nirvana">
+                    <div class="product__description">
+                        <h3 class="product__title">Nirvana</h3>
+                        <span class="product__price">$1500</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="5"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen06.jpg" alt="remera negra estampa vampira">
+                    <div class="product__description">
+                        <h3 class="product__title">Vampira</h3>
+                        <span class="product__price">$1800</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="6"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen07.jpg" alt="remera negra sistema solar">
+                    <div class="product__description">
+                        <h3 class="product__title">Sistema solar </h3>
+                        <span class="product__price">$1500</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus" data-id="7"></i>
+                </div>
+                <div class="product">
+                    <img class="product__img" src="img/imagen08.jpg" alt="remeron nevada">
+                    <div class="product__description">
+                        <h3 class="product__title">Remeron nevada</h3>
+                        <span class="product__price">$1800</span>
+                    </div>
+                    <i class="product__icon fa-solid fa-cart-plus " data-id="8"></i>
+                </div>
+            </section>
+            <div class="container-editor">
+                <div class="editor__item">
+                    <img src="img/estilo01.jpg" alt="remera culprit" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+                <div class="editor__item">
+                    <img src="img/estilo02.jpg" alt="remera blanca con puntos negros" class="editor__img">
+                    <p class="editor__circle">Expresa tu estilo</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-box" id="caracteristicas">
+            <div class="box">
+               <div class="box__icon"><i class="fa-solid fa-truck-fast"></i></div>
+               <div class="box__content">
+                <h3 class="box__title">ENVÌOS</h3>
+                <p class="box__txt">A todo el país</p>
+               </div>
+            </div>
+            <div class="box">
+                <div class="box__icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <div class="box__content">
+                    <h3 class="box__title">VENTA MAYORISTA</h3>
+                    <p class="box__txt">A partir $7000</p>
+                </div> 
+            </div>
+            <div class="box">
+                <div class="box__icon"><i class="fa-regular fa-credit-card"></i></div>
+                <div class="box__content">
+                    <h3 class="box__title">3 CUOTAS SIN INTERÈS</h3>
+                    <p class="box__txt">Todos los días de la semana</p>
+                </div> 
+            </div>  
+            <div class="box">
+                <div class="box__icon"><i class="fa-solid fa-arrow-rotate-left"></i></div>
+                <div class="box__content">
+                    <h3 class="box__title">COMPRA SEGURA</h3>
+                    <p class="box__txt">Cambios y devoluciones</p>
+                </div> 
+            </div> 
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook redes" ></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-instagram redes"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-tiktok redes"></i></a>
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul class="menu">
+                <li class="menu__item"><a href="#main-nav" class="menu__link">INICIO</a></li>
+                <li class="menu__item"><a href="#section-products" class="menu__link">TIENDA</a></li>
+                <li class="menu__item"><a href="#caracteristicas" class="menu__link">CARACTERISTICAS</a></li>
+            </ul>
+        </nav>
+        <p class="copy"><i class="fa-solid fa-laptop-code"></i>Desing by Karina Fernandez </p>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/tienda.js"></script>
+    <script src="js/slider.js"></script>
+    
+</body>
+</html>
